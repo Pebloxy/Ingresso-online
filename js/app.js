@@ -18,6 +18,8 @@ function comprar() {
     if (parseInt(quantidadeDesejada) > quantidadeSobrando) {
         alert (`Quantidade indisponível para ${tipoIngresso}`);
         return;
+    } else if (quantidadeDesejada < 0) {
+        alert ("Escolha um número positivo!")
     } else {
         //subtrai a quantidade de ingressos disponíveis
         let resultadoDaCompra = quantidadeSobrando - quantidadeDesejada 
