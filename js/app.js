@@ -5,9 +5,9 @@ function comprar() {
     //verifica se há ingressos suficientes disponíveis do tipo especificado
     if (tipoIngresso == "pista") {                           
         comprarPista(quantidadeDesejada, tipoIngresso);
-    } else if (tipoIngresso == "inferior") {
-        comprarSuperior(quantidadeDesejada, tipoIngresso);
     } else if (tipoIngresso == "superior") {
+        comprarSuperior(quantidadeDesejada, tipoIngresso);
+    } else if (tipoIngresso == "inferior") {
         comprarInferior(quantidadeDesejada, tipoIngresso);
     } else {
         alert ("tipo invalido");
